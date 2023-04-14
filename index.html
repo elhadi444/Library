@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="icon" type="image/x-icon" href="/images/bookshelf.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="active">
+        <header class="header">
+            <div class="container ">
+                <h1>Library</h1>
+                <!-- <button class="btn-login">log in</button> -->
+            </div>
+        </header>
+
+        <main class="main container">
+            <button class="btn-add">+ add book</button>
+
+            <div class="book-container">
+                <!-- <div class="book">
+                    <div class="book-title"><span class="indication">book title :</span>The Hobbit</div>
+                    <div class="book-author"><span class="indication">author :</span>J.R.R. Tolkien</div>
+                    <div class="book-pages"><span class="indication">295 pages</span></div>
+                    <button class="read not-read" id="btn-read">not read</button>
+                    <button class="remove" id="btn-remove">remove</button>
+                </div> -->
+            </div>
+        </main>
+
+        <footer>
+            <p>
+                Copyright © 2023 <a href="http://">elhadi  <img src="images/github.svg" width="20" alt="github"></a> 
+            </p>
+        </footer>
+
+        <div class="overlay"></div>
+        <div class="modal">
+            <form class="form">
+                <h3>Add new book</h3>
+                <input type="text" name="title" id="input-title" placeholder="Title" required>
+                <input type="text" name="author" id="input-author" placeholder="Author" required>
+                <input type="number" name="pages" id="input-pages" placeholder="Pages" required>
+                <label for="input-read">Have you read it?<input id="input-read" name="read" type="checkbox" value="read"></label>
+                <button type="submit" class="btn-add-book" id="btn-add-book">add book</button>
+            </form>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+</html>
